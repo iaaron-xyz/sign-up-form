@@ -17,6 +17,13 @@ body {
     min-height: 100vh;
     display: flex;
 }
+h1 {
+    margin-bottom: 30px;
+}
+p {
+    font-weight: 900;
+    font-size: 1.5rem;
+}
 input {
     font-size: 1.3rem;
 }
@@ -50,4 +57,7 @@ input {
     margin-right: 75px;
     display: flex;
     flex-direction: column;
+}
+.form-description {
+    margin-bottom: 150px;
 }
