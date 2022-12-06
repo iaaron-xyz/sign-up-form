@@ -13,8 +13,12 @@ body {
     background-color: black;
     color: white;
     font-family: 'Montserrat', sans-serif;
+    font-size: 1.3rem;
     min-height: 100vh;
     display: flex;
+}
+input {
+    font-size: 1.3rem;
 }
 
 /* Cover image styling */
@@ -28,7 +32,7 @@ body {
 
 /* Form styling */
 .form-fields {
-    padding: 20px;
+    padding: 75px;
     width: 500px;
     /* Make this div fill the rest of the empty space */
     flex: 1 1 auto;
@@ -37,4 +41,13 @@ body {
     /* Center the div vertically */
     flex-direction: column;
     justify-content: center;
+}
+.form-fields form div {
+    margin-bottom: 10px;
+    display: flex;
+}
+.input-group div {
+    margin-right: 75px;
+    display: flex;
+    flex-direction: column;
 }
