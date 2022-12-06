@@ -1,5 +1,40 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
+/* General Styling */
+* {
+    /* border: 1px solid red; */
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Tags styling */
 body {
+    background-color: black;
+    color: white;
     font-family: 'Montserrat', sans-serif;
+    min-height: 100vh;
+    display: flex;
+}
+
+/* Cover image styling */
+.cover-image {
+    background-image: url(./media/cover-img.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    width: 40vw;
+}
+
+/* Form styling */
+.form-fields {
+    padding: 20px;
+    width: 500px;
+    /* Make this div fill the rest of the empty space */
+    flex: 1 1 auto;
+    /* Flex properties */
+    display: flex;
+    /* Center the div vertically */
+    flex-direction: column;
+    justify-content: center;
 }
