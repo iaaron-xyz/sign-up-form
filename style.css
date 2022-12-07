@@ -2,11 +2,13 @@
 
 /* Variables */
 :root {
-    --space-divs-left: 70px;
     --space-divs-top: 30px;
+    --space-divs-right: 200px;
     --space-divs-bottom: 30px;
+    --space-divs-left: 70px;
     --color-bg: #0d1117;
     --color-text: #d6dde4;
+    --color-border-input: rgb(155, 155, 155);
 }
 
 /* General Styling */
@@ -16,7 +18,6 @@
     margin: 0;
     box-sizing: border-box;
 }
-
 /* Tags styling */
 body {
     background-color: var(--color-bg);
@@ -30,10 +31,20 @@ h1 {
     margin-bottom: var(--space-divs-bottom);
 }
 input {
+    background-color: var(--color-bg);
+    color: var(--color-text);
+    height: 40px;
+    width: 400px;
+    border: 1px solid var(--color-border-input);
+    border-radius: 5px;
+    margin-top: 10px;
+    padding: 10px;
     font-size: 1.3rem;
 }
 a {
     text-decoration: none;
+    color: white;
+    font-weight: 900;
 }
 
 /* Cover image styling */
@@ -53,7 +64,6 @@ form {
     padding-left: var(--space-divs-left);
 }
 .form-fields {
-    /* padding: 75px; */
     width: 500px;
     /* Make this div fill the rest of the empty space */
     flex: 1 1 auto;
@@ -68,8 +78,9 @@ form {
     display: flex;
 }
 .form-description {
+    margin-bottom: 100px;
     padding-left: var(--space-divs-left);
-    padding-right: var(--space-divs-left);
+    padding-right: var(--space-divs-right);
 }
 .form-description p {
     font-weight: 600;
@@ -80,13 +91,13 @@ form {
     display: flex;
     flex-direction: column;
 }
-.form-description {
-    margin-bottom: 150px;
-}
 .buttons {
     margin-top: 50px;
 }
 .btn-submit {
     border-radius: 7px;
-    padding: 15px 30px;
+    margin-bottom: 10px;
+    padding: 20px 35px;
+    font-weight: bold;
+    font-size: 1rem;
 }
