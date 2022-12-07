@@ -6,8 +6,9 @@
     --space-divs-right: 200px;
     --space-divs-bottom: 30px;
     --space-divs-left: 70px;
-    --color-bg: #0d1117;
-    --color-text: #d6dde4;
+    --color-bg: #013145;
+    --color-text-main: #ebd59d;
+    --color-text-neutral: rgb(221, 221, 221);
     --color-border-input: rgb(155, 155, 155);
 }
 
@@ -21,7 +22,7 @@
 /* Tags styling */
 body {
     background-color: var(--color-bg);
-    color: var(--color-text);
+    color: var(--color-text-main);
     font-family: 'Montserrat', sans-serif;
     font-size: 1.3rem;
     min-height: 100vh;
@@ -32,7 +33,7 @@ h1 {
 }
 input {
     background-color: var(--color-bg);
-    color: var(--color-text);
+    color: var(--color-text-neutral);
     height: 40px;
     width: 400px;
     border: 1px solid var(--color-border-input);
@@ -43,7 +44,7 @@ input {
 }
 a {
     text-decoration: none;
-    color: white;
+    color: var(--color-text-neutral);
     font-weight: 900;
 }
 
@@ -83,8 +84,9 @@ form {
     padding-right: var(--space-divs-right);
 }
 .form-description p {
-    font-weight: 600;
-    font-size: 1.3rem;
+    color: var(--color-text-neutral);
+    font-weight: 550;
+    font-size: 1.2rem;
 }
 .input-group div {
     margin-right: 75px;
@@ -95,9 +97,15 @@ form {
     margin-top: 50px;
 }
 .btn-submit {
+    background-color: transparent;
+    color: var(--color-text-main);
     border-radius: 7px;
     margin-bottom: 10px;
-    padding: 20px 35px;
+    padding: 20px 50px;
     font-weight: bold;
     font-size: 1rem;
+    border: 2px solid var(--color-text-main);
+}
+.buttons + p {
+    font-size: 0.95rem;
 }
