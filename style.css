@@ -1,5 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
+/* Variables */
+:root {
+    --space-divs-left: 70px;
+    --space-divs-top: 30px;
+    --space-divs-bottom: 30px;
+    --color-bg: #0d1117;
+    --color-text: #d6dde4;
+}
+
 /* General Styling */
 * {
     /* border: 1px solid red; */
@@ -10,22 +19,21 @@
 
 /* Tags styling */
 body {
-    background-color: black;
-    color: white;
+    background-color: var(--color-bg);
+    color: var(--color-text);
     font-family: 'Montserrat', sans-serif;
     font-size: 1.3rem;
     min-height: 100vh;
     display: flex;
 }
 h1 {
-    margin-bottom: 30px;
-}
-p {
-    font-weight: 900;
-    font-size: 1.5rem;
+    margin-bottom: var(--space-divs-bottom);
 }
 input {
     font-size: 1.3rem;
+}
+a {
+    text-decoration: none;
 }
 
 /* Cover image styling */
@@ -38,8 +46,14 @@ input {
 }
 
 /* Form styling */
+form {
+    background-color: var(--color-bg);
+    padding-top: var(--space-divs-top);
+    padding-bottom: var(--space-divs-bottom);
+    padding-left: var(--space-divs-left);
+}
 .form-fields {
-    padding: 75px;
+    /* padding: 75px; */
     width: 500px;
     /* Make this div fill the rest of the empty space */
     flex: 1 1 auto;
@@ -53,6 +67,14 @@ input {
     margin-bottom: 10px;
     display: flex;
 }
+.form-description {
+    padding-left: var(--space-divs-left);
+    padding-right: var(--space-divs-left);
+}
+.form-description p {
+    font-weight: 600;
+    font-size: 1.3rem;
+}
 .input-group div {
     margin-right: 75px;
     display: flex;
@@ -60,4 +82,11 @@ input {
 }
 .form-description {
     margin-bottom: 150px;
+}
+.buttons {
+    margin-top: 50px;
+}
+.btn-submit {
+    border-radius: 7px;
+    padding: 15px 30px;
 }

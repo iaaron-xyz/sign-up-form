@@ -9,11 +9,15 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
+    <!-- Left part: Cover image section -->
     <div class="cover-image">
     </div>
 
+    
+    <!-- Right part: Form section -->
     <div class="form-fields">
         
+        <!-- Form text description -->
         <div class="form-description">
             <h1>Sign-up Form</h1>
             <p>
@@ -24,7 +28,9 @@
             </p>
         </div>
 
+        <!-- Form section -->
         <form action="#" method="post">
+            <!-- name input -->
             <div class="input-group name-input">
                 <div>
                     <label for="first-name">First name:</label>
@@ -35,7 +41,7 @@
                     <input type="text" id="last-name" name="last-name" placeholder="Doe">
                 </div>
             </div>
-
+            <!-- Coontact info input -->
             <div class="input-group contact-input">
                 <div>
                     <label for="email">Email:</label>
@@ -46,7 +52,7 @@
                     <input type="text" id="phone" name="phone" placeholder="55 1234 4353">
                 </div>
             </div>
-
+            <!-- Password input -->
             <div class="input-group password-input">
                 <div>
                     <label for="pass">Password:</label>
@@ -57,6 +63,12 @@
                     <input type="password" id="pass-confirmation" name="pass-confirmation">
                 </div>
             </div>
+            <!-- Button section -->
+            <div class="buttons">
+                <button type="button" class="btn-submit">Create Account</button>
+            </div>
+
+            <p>Already have an account? <a href="#">Log in</a></p>
         </form>
     </div>
 </body>
