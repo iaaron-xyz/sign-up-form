@@ -6,7 +6,7 @@
     --space-divs-right: 200px;
     --space-divs-bottom: 30px;
     --space-divs-left: 70px;
-    --color-bg: #013145;
+    --color-bg: black;
     --color-text-main: #ebd59d;
     --color-text-neutral: rgb(221, 221, 221);
     --color-border-input: rgb(155, 155, 155);
@@ -108,4 +108,12 @@ form {
 }
 .buttons + p {
     font-size: 0.95rem;
+}
+
+input:focus {
+    outline: none;
+}
+.btn-submit:hover {
+    background-color: var(--color-text-main);
+    color: var(--color-bg);
 }
