@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Zen+Dots&display=swap');
 
 /* Variables */
 :root {
@@ -7,7 +7,7 @@
     --space-divs-bottom: 30px;
     --space-divs-left: 70px;
     --color-bg: black;
-    --color-text-main: #ebd59d;
+    --color-text-main: #8ddb8f;
     --color-text-neutral: rgb(221, 221, 221);
     --color-border-input: rgb(155, 155, 155);
 }
@@ -55,6 +55,25 @@ a {
     background-size: cover;
     height: 100vh;
     width: 40vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.stripe {
+    height: 200px;
+    background-color: rgba(0,0,0,0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.stripe img {
+    height: 100px;
+}
+.stripe span {
+    color: white;
+    font-family: 'Zen Dots', cursive;
+    margin-left: 50px;
+    font-size: 4rem;
 }
 
 /* Form styling */
@@ -65,6 +84,7 @@ form {
     padding-left: var(--space-divs-left);
 }
 .form-fields {
+    color: var(--color-text-neutral);
     width: 500px;
     /* Make this div fill the rest of the empty space */
     flex: 1 1 auto;
@@ -73,6 +93,9 @@ form {
     /* Center the div vertically */
     flex-direction: column;
     justify-content: center;
+}
+.form-fields h1, .form-fields p {
+    color: var(--color-text-main);
 }
 .form-fields form div {
     margin-bottom: 10px;
