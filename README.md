@@ -1,2 +1,2 @@
 # Sign-up form webpage
-This project is a sign-up and sign-in form webpage with validation methods implemented using basic HTML, CSS  and JavaScript.
+This project is a sign-up and sign-in form webpage with validation methods implemented using basic HTML, CSS  and JavaScript. Check the [live demo here!](https://iaaron-xyz.github.io/sign-up-form/)
