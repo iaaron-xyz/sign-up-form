@@ -7,7 +7,7 @@
     --space-divs-bottom: 30px;
     --space-divs-left: 70px;
     --color-bg: black;
-    --color-text-main: #ea3c53;
+    --color-text-main: #ec7e8d;
     --color-text-neutral: rgb(221, 221, 221);
     --color-border-input: rgb(155, 155, 155);
 }
@@ -142,7 +142,18 @@ form {
 }
 
 input:focus {
+    border: none;
     outline: none;
+}
+input:focus:valid {
+    border: 2px solid rgb(57, 228, 66);
+    outline: rgb(88, 230, 100);
+    box-shadow: 0 4px 8px 0 rgba(80, 253, 94, 0.2), 0 6px 20px 0 rgba(57, 247, 98, 0.19);
+}
+input:focus:invalid {
+    border: 2px solid rgb(228, 57, 57);
+    outline: rgb(230, 88, 88);
+    box-shadow: 0 4px 8px 0 rgba(253, 80, 80, 0.2), 0 6px 20px 0 rgba(247, 57, 57, 0.19);
 }
 .btn-submit:hover {
     background-color: var(--color-text-main);
