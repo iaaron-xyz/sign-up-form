@@ -37,11 +37,11 @@
             <div class="input-group name-input">
                 <div>
                     <label for="first-name">First name:</label>
-                    <input type="text" id="first-name" name="first-name" placeholder="John" minlength="3" maxlength="20" required>
+                    <input type="text" id="first-name" name="first-name" placeholder="John" minlength="2" maxlength="20" required>
                 </div>
                 <div>
                     <label for="last-name">Last name:</label>
-                    <input type="text" id="last-name" name="last-name" placeholder="Doe" maxlength="20">
+                    <input type="text" id="last-name" name="last-name" placeholder="Doe" maxlength="20" required>
                 </div>
             </div>
             <!-- Coontact info input -->
@@ -52,18 +52,18 @@
                 </div>
                 <div>
                     <label for="phone">Phone number:</label>
-                    <input type="text" id="phone" name="phone" placeholder="55 1234 4353" pattern="\d{2}[\- ]\d{4}[\- ]\d{4}">
+                    <input type="text" id="phone" name="phone" placeholder="55 1234 4353" pattern="\d{2}[\- ]?\d{4}[\- ]?\d{4}">
                 </div>
             </div>
             <!-- Password input -->
             <div class="input-group password-input">
                 <div>
                     <label for="pass">Password:</label>
-                    <input type="password" id="pass" name="pass" required>
+                    <input type="password" id="pass" name="pass" minlength="4" required>
                 </div>
                 <div>
                     <label for="pass-confirmation">Confirm Password:</label>
-                    <input type="password" id="pass-confirmation" name="pass-confirmation" required>
+                    <input type="password" id="pass-confirmation" name="pass-confirmation" minlength="4" required>
                 </div>
             </div>
             <!-- Button section -->
