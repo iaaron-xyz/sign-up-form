@@ -151,12 +151,12 @@ input:focus {
     border: none;
     outline: none;
 }
-input:focus:valid {
+.input-validation:focus:valid, .match:focus {
     border: 2px solid rgb(57, 228, 66);
     outline: rgb(88, 230, 100);
     box-shadow: 0 4px 8px 0 rgba(80, 253, 94, 0.2), 0 6px 20px 0 rgba(57, 247, 98, 0.19);
 }
-input:focus:invalid {
+.input-validation:focus:invalid, .not-match:focus {
     border: 2px solid rgb(228, 57, 57);
     outline: rgb(230, 88, 88);
     box-shadow: 0 4px 8px 0 rgba(253, 80, 80, 0.2), 0 6px 20px 0 rgba(247, 57, 57, 0.19);

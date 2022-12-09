@@ -4,29 +4,29 @@ let confirmationError = document.getElementById("confirmation-error");
 
 let toSubmit = false;
 
-// console.log(confirmationError.innerHTML)
-// console.log(password.value);
-
 function checkConfirmation(e) {
-    // console.log(confirmationError.innerHTML);
-    // console.log(e.style);
 
     if (e.value.length > 0) {
         // Alert passwords are not equal
         if (e.value !== password.value) {
-            // console.log("Does not match");
             confirmationError.innerHTML = "Passwords does not match";
+            confirmation.classList.remove("match");
+            confirmation.classList.add("not-match");
             toSubmit = false;
         }
         // Remove alert once password and confirmation match
         else {
             confirmationError.innerHTML = "";
+            confirmation.classList.remove("not-match");
+            confirmation.classList.add("match");
             toSubmit = true;
         }
     }
     // Alert reuirement of password confirmation if empty
     else {
         confirmationError.innerHTML = "Confirm your password";
+        confirmation.classList.remove("match");
+        confirmation.classList.add("not-match");
         toSubmit = false;
     }
 }
