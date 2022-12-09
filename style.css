@@ -140,6 +140,12 @@ form {
 .buttons + p {
     font-size: 0.95rem;
 }
+#confirmation-error {
+    color: rgb(228, 45, 45);
+    font-size: small;
+    font-weight: bold;
+    margin-top: 5px;
+}
 
 input:focus {
     border: none;

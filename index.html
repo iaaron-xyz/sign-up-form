@@ -7,6 +7,7 @@
     <title>Sign up Form</title>
     
     <link rel="stylesheet" href="./style.css">
+    <script src="./script.js" defer></script>
 </head>
 <body>
     <!-- Left part: Cover image section -->
@@ -31,7 +32,7 @@
         </div>
 
         <!-- Form section -->
-        <form action="#" method="post">
+        <form action="#" method="post" onsubmit="return validate()">
             <h1>Join us!</h1>
             <!-- name input -->
             <div class="input-group name-input">
@@ -60,15 +61,17 @@
                 <div>
                     <label for="pass">Password:</label>
                     <input type="password" id="pass" name="pass" minlength="4" required>
+                    <span id="password-error"> </span>
                 </div>
                 <div>
                     <label for="pass-confirmation">Confirm Password:</label>
-                    <input type="password" id="pass-confirmation" name="pass-confirmation" minlength="4" required>
+                    <input type="password" id="pass-confirmation" name="pass-confirmation" minlength="4" onkeyup="checkConfirmation(this)" required>
+                    <span id="confirmation-error"> </span>
                 </div>
             </div>
             <!-- Button section -->
             <div class="buttons">
-                <button type="submit" class="btn-submit">Create Account</button>
+                <button type="submit" class="btn-submit" value="submit">Create Account</button>
             </div>
 
             <p>Already have an account? <a href="#">Log in</a></p>
